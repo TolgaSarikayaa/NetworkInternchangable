@@ -12,7 +12,7 @@ class Localservice : NetworkService {
     
     func download(_ resource: String) async throws -> [User] {
         
-        // Localden Okuma
+       
         guard let path = Bundle.main.path(forResource: resource, ofType: "json") else {
             fatalError("Resource not found")
         }
